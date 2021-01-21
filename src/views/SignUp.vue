@@ -2,23 +2,23 @@
   <div class="signup">
     <NavAuth />
 
-    <b-container>
-      <div class="login__form">
+    <b-container class="auth-container">
+      <div class="auth-form signup__form mt-5">
         <b-card title="Sign Up">
           <b-form>
             <b-row>
-              <b-col cols="12">
+              <b-col cols="12" class="mb-3">
                 <b-form-input required :type="emailType" placeholder="Email">
                 </b-form-input>
               </b-col>
-              <b-col cols="12">
+              <b-col cols="12" class="mb-3">
                 <b-form-input
                   required
                   :type="passType"
                   placeholder="Password"
                 ></b-form-input>
               </b-col>
-              <b-col cols="12">
+              <b-col cols="12" class="mb-3">
                 <b-form-input
                   required
                   :type="passType"

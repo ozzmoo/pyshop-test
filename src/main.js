@@ -4,7 +4,6 @@ import store from './store'
 
 import router from './router'
 
-import Vuelidate from 'vuelidate'
 
 import {
   BootstrapVue,
@@ -21,7 +20,6 @@ import 'firebase/database';
 
 Vue.config.productionTip = false
 
-Vue.use(Vuelidate)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
