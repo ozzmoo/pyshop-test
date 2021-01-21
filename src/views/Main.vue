@@ -4,22 +4,23 @@
     <b-container class="main-grid">
       <b-row>
         <b-col class="mt-2">
-          <b-button @click="showModal = true">Add new</b-button>
+          <b-button @click="showModal = true" variant="outline-primary"
+            >Add new</b-button
+          >
         </b-col>
       </b-row>
-      <b-row class="mt-5">
-        <b-col>
-          <div class="todos" v-for="(todo, key) in todos" :key="key">
-            <Todo
-              :id="key"
-              :title="todo.title"
-              :descr="todo.descr"
-              :time="todo.time"
-              :status="todo.status"
-            />
-          </div>
-        </b-col>
-      </b-row>
+      <div class="todos">
+        <Todo
+          class="m-2"
+          v-for="(todo, key) in todos"
+          :key="key"
+          :id="key"
+          :title="todo.title"
+          :descr="todo.descr"
+          :time="todo.time"
+          :status="todo.status"
+        />
+      </div>
     </b-container>
     <b-modal
       id="add-modal"
@@ -91,5 +92,11 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.todos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 </style>

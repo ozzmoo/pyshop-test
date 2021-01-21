@@ -6,6 +6,7 @@
 
 <script>
 import firebase from "firebase/app";
+
 export default {
   mounted() {
     if (firebase.auth().currentUser == null) {
@@ -18,5 +19,8 @@ export default {
 <style>
 body {
   background-color: #f5f5f5;
+}
+.text--gray {
+  color: rgb(155, 155, 155);
 }
 </style>
