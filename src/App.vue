@@ -5,13 +5,18 @@
 </template>
 
 <script>
+import firebase from "firebase/app";
 export default {
   mounted() {
-    /* Не забыть убрать */
-    this.$router.push("/login");
+    if (firebase.auth().currentUser == null) {
+      this.$router.push("/login");
+    }
   },
 };
 </script>
 
 <style>
+body {
+  background-color: #f5f5f5;
+}
 </style>
