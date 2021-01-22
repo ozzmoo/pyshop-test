@@ -7,7 +7,7 @@
           <b-card-text class="text--gray">Date: {{ parsedDate }}</b-card-text>
         </b-col>
         <b-col>
-          <b-card-text class="todo__text text--gray">{{
+          <b-card-text class="todo__time text--gray">{{
             parsedTimeLeft
           }}</b-card-text>
         </b-col>
@@ -65,5 +65,9 @@ export default {
 
 .todo__title {
   border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+.todo__time {
+  text-align: right;
 }
 </style>
