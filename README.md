@@ -1,6 +1,6 @@
 # pyshop-test-todo
 
-demo: (pyshop-test.surge.sh)[https://pyshop-test.surge.sh/]
+demo: [pyshop-test.surge.sh](https://pyshop-test.surge.sh/)
 
 ## Project setup
 ```
